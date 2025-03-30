@@ -14,7 +14,90 @@
       }
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
+      /* @media (max-width: 1250px) {
+      } */
+
+      body {
+        font-family: "Sono", sans-serif;
+        margin: 0;
+        padding: 40px;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .pricing-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+      }
+
+      /* Pricing Plan Card */
+      .pricing-plan {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1;
+        min-width: 280px;
+        max-width: 320px;
+      }
+
+      .plan-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .plan-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+
+      .plan-features li {
+        font-size: 1rem;
+        padding: 5px 0;
+      }
+
+      .plan-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .plan-button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .pricing-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .pricing-plan {
+          width: 90%;
+        }
       }
     </style>
   </head>
