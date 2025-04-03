@@ -3,5 +3,5 @@ $("button").click(function () {
 });
 
 $(document).keypress(function (event) {
-  $("h1").text(event.keys);
+  $("h1").text(event.key);
 });
