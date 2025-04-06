@@ -1,0 +1,352 @@
+/* Main Styles for D' Radiant School Website */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #ff9800;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #555;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff9800;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ff9800;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero .lead {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  animation: fadeInUp 1s ease 0.2s;
+  animation-fill-mode: both;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 20px;
+  animation: fadeInUp 1s ease 0.4s;
+  animation-fill-mode: both;
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #444;
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+/* Program Items */
+.program-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.program-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.program-icon {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.program-item h4 {
+  color: #ff9800;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.program-item ul {
+  padding-left: 20px;
+}
+
+.program-item li {
+  margin-bottom: 8px;
+}
+
+/* Highlight Box */
+.highlight-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.highlight-box h3 {
+  color: #ff9800;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.vision-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.vision-list li:before {
+  content: "✓";
+  color: #ffcc00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Testimonial */
+.testimonial {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial:before {
+  content: '"';
+  font-size: 5rem;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: serif;
+}
+
+.testimonial-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-style: italic;
+  z-index: 1;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0 30px;
+  margin-top: 80px;
+}
+
+.footer h5 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+  transform: translateX(5px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+  color: #333;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+}
+
+.btn-outline-light {
+  border-width: 2px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Enrollment CTA */
+.enrollment-cta {
+  background: linear-gradient(135deg, #ff9800, #ffcc00);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
+}
+
+.enrollment-cta h3 {
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .lead {
+    font-size: 1.2rem;
+  }
+
+  .program-item,
+  .highlight-box,
+  .testimonial,
+  .contact-form,
+  .contact-info {
+    margin-bottom: 30px;
+  }
+}
