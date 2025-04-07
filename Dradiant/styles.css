@@ -1,20 +1,57 @@
 /* Main Styles for D' Radiant School Website */
 
-body {
+/* body {
   font-family: "Poppins", sans-serif;
   background-color: #f8f9fa;
+  color: #555;
+  line-height: 1.6;
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffa726, #9ccc65, #fff176);
+  background-attachment: fixed;
   color: #555;
   line-height: 1.6;
 }
 
 /* Navigation */
-.navbar {
+/* .navbar {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+} */
+
+.navbar {
+  background: linear-gradient(
+    to right,
+    rgba(255, 152, 0, 0.9),
+    rgba(139, 195, 74, 0.9),
+    rgba(255, 235, 59, 0.9)
+  );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 15px 0;
 }
 
 .navbar-brand {
+  font-weight: 700;
+  color: #fff; /* White text for better contrast */
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #fff; /* White text for better contrast */
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #333; /* Dark color on hover */
+  transform: translateY(-2px);
+}
+
+/* .navbar-brand {
   font-weight: 700;
   color: #ff9800;
   font-size: 1.5rem;
@@ -30,7 +67,7 @@ body {
 .nav-link:hover {
   color: #ff9800;
   transform: translateY(-2px);
-}
+} */
 
 /* Hero Section */
 .hero {
@@ -56,6 +93,7 @@ body {
   margin-bottom: 15px;
   animation: fadeInUp 1s ease 0.2s;
   animation-fill-mode: both;
+  font-weight: bold;
 }
 
 .hero .tagline {
@@ -64,6 +102,7 @@ body {
   margin-top: 20px;
   animation: fadeInUp 1s ease 0.4s;
   animation-fill-mode: both;
+  font-weight: bold;
 }
 
 /* Section Titles */
@@ -111,12 +150,15 @@ body {
 
 /* Program Items */
 .program-item {
-  background-color: #fff;
+  background-color: #fff8e1b3;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  height: 100%;
+  height: 90%; /* Reduced from 100% to 90% */
+  margin: 0 auto; /* Centers the item within its column */
+  width: 100%; /* Sets width to 90% */
+  margin-bottom: 20px; /* Adds space below each item */
 }
 
 .program-item:hover {
@@ -146,7 +188,8 @@ body {
 
 /* Highlight Box */
 .highlight-box {
-  background-color: #fff;
+  background-color: rgba(255, 248, 225, 0.7);
+  /* background-color: #fff; */
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -157,6 +200,11 @@ body {
   color: #ff9800;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+.vision-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
 }
 
 .vision-list li {
@@ -211,14 +259,14 @@ body {
 
 /* Contact Form */
 .contact-form {
-  background-color: #fff;
+  background-color: #fff8e1b3;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info {
-  background-color: #fff;
+  background-color: #fff8e1b3;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   height: 100%;
@@ -330,6 +378,23 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-md-4 > * {
+  height: 100%;
+}
+
+/* If you're using these in a card layout specifically */
+.col-md-4 .card,
+.col-md-4 .program-item,
+.col-md-4 .highlight-box,
+.col-md-4 .testimonial {
+  height: 100%;
 }
 
 /* Media Queries */
